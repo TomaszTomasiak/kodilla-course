@@ -88,7 +88,7 @@ public class CompanyDaoTestSuite {
             employeeDao.deleteAll();
         }
     }
-/*
+
     @Test
     public void testCompanyNamedNativeQueryRetrieveCompaniesWithFirstFreeLettersAre(){
         //Given
@@ -112,6 +112,4 @@ public class CompanyDaoTestSuite {
             companyDao.deleteAll();
         }
     }
-
- */
 }
