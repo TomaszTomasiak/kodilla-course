@@ -8,7 +8,7 @@ import java.util.List;
 @NamedNativeQuery(
         name = "Company.retrieveCompaniesWithFirstFreeLettersAre",
         query = "SELECT * FROM COMPANIES WHERE LEFT(COMPANY_NAME, 3) = :THREELETTERS"
-)
+                )
 
 @Entity
 @Table(name = "COMPANIES")

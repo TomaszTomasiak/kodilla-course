@@ -13,6 +13,6 @@ import java.util.List;
 @Repository
 public interface CompanyDao extends CrudRepository<Company, Integer> {
 
-    @Query
+    @Query(nativeQuery = true)
     List<Company> retrieveCompaniesWithFirstFreeLettersAre(@Param("THREELETTERS") String threeLetters);
 }
