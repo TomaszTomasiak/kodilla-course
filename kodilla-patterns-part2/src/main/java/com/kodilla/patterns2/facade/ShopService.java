@@ -26,7 +26,7 @@ public class ShopService {
         }
     }
 
-    public void addItem(long orderId, Long productId, double qty) {
+    public void addItem(long orderId, long productId, double qty) {
         orders.stream()
                 .filter(o -> o.getOrderId().equals(orderId))
                 .forEach(o -> o.getItems().add(new Item(productId, qty)));
