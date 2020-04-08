@@ -12,13 +12,5 @@ buildscript {
 
 apply plugin: 'java'
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-
-implementation 'junit:junit:4.12'
 }
-
-
