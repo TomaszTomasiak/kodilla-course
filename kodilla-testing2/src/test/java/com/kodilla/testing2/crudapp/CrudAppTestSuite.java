@@ -30,7 +30,6 @@ public class CrudAppTestSuite {
 //    @After
 //    public void cleanUpAfterTest() {
 //        driver.close();
-//        driver.close();
 //    }
 
     private String createCrudAppTestTask() throws InterruptedException {
@@ -101,12 +100,12 @@ public class CrudAppTestSuite {
 
         Thread.sleep(5000, 0);
 
-        result = driverTrello.findElements(By.xpath("//span")).stream()
+        result = driverTrello.findElements(By.xpath(".//span")).stream()
                 .filter(theSpan -> theSpan.getText().contains(taskName))
                 .collect(Collectors.toList())
                 .size() > 0;
 
-        //driverTrello.close();
+        driverTrello.close();
 
         return result;
     }
