@@ -3,11 +3,11 @@ package com.kodilla.patterns.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class TaskLst {
+public final class TaskList {
     final private String name;
     final private List<Task> tasks = new ArrayList<>();
 
-    public TaskLst(final String name) {
+    public TaskList(final String name) {
         this.name = name;
     }
 

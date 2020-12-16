@@ -39,7 +39,7 @@ public class ShopService {
         while (orderIterator.hasNext()) {
             Order theOrder = orderIterator.next();
             int orderSize = theOrder.getItems().size();
-            for (int n = 0; n < theOrder.getItems().size(); n++) {
+            for (int n = 0; n < orderSize; n++) {
                 if (theOrder.getItems().get(n).getProdutId().equals(productId)) {
                     theOrder.getItems().remove(n);
                     return true;

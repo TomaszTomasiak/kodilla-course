@@ -60,9 +60,10 @@ public class CalculatorTestSuite {
     public void testFactorial() {
         //Given
         //When
-        BigDecimal result = calculator.factorial(new BigDecimal(1000));
+        BigDecimal result = calculator.factorial(new BigDecimal(65));
         //Then
         assertTrue(BigDecimal.ONE.compareTo(result) < 0);
+        System.out.println(result);
     }
 }
 

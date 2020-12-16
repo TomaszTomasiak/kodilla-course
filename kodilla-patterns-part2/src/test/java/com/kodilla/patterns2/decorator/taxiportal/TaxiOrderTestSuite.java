@@ -106,11 +106,12 @@ public class TaxiOrderTestSuite {
         theOrder = new TaxiNetworkOrderDecorator(theOrder);
         theOrder = new VipDecorator(theOrder);
         theOrder = new ChildSeatDecorator(theOrder);
+        theOrder = new ExpressDecorator(theOrder);
         System.out.println(theOrder.getCost());
         //When
         BigDecimal theCost = theOrder.getCost();
         //Then
-        assertEquals(new BigDecimal(52), theCost);
+        assertEquals(new BigDecimal(57), theCost);
     }
 
     @Test
