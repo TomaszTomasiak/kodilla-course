@@ -41,10 +41,11 @@ public class LibraryTestSuite {
 
         //Then
         Assert.assertEquals(2, library.getBooks().size());
+        assert clonedLibrary != null;
         Assert.assertEquals(2, clonedLibrary.getBooks().size());
+        assert deepClonedLibrary != null;
         Assert.assertEquals(3, deepClonedLibrary.getBooks().size());
         Assert.assertEquals(clonedLibrary.getBooks(), library.getBooks());
         Assert.assertNotEquals(deepClonedLibrary.getBooks(), library.getBooks());
-
     }
 }
