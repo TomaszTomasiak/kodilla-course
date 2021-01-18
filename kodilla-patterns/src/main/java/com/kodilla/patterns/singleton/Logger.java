@@ -1,21 +1,21 @@
 package com.kodilla.patterns.singleton;
 
 public final class Logger {
-    private static Logger logger = null;
+    private static Logger loggerInstance = null;
     private String lastLog = "";
 
     private Logger() {
     }
 
     public static Logger getInstance() {
-        if (logger == null) {
+        if (loggerInstance == null) {
             synchronized (Logger.class) {
-                if (logger == null) {
-                    logger = new Logger();
+                if (loggerInstance == null) {
+                    loggerInstance = new Logger();
                 }
             }
         }
-        return logger;
+        return loggerInstance;
 
     }
 
