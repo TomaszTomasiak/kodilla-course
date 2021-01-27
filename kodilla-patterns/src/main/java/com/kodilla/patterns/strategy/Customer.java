@@ -19,6 +19,4 @@ public class Customer {
     public void setBuyingStrategy(BuyPredictor buyPredictor) {
         this.buyPredictor = buyPredictor;
     }
-
-
 }
