@@ -1,4 +1,4 @@
-package com.kodilla.patterns2.observer.forum.homework;
+package com.kodilla.patterns2.observer.homework;
 
 public class Alf extends StudentTask{
     public Alf() {

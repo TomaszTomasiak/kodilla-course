@@ -1,6 +1,5 @@
 package com.kodilla.patterns2.observer.homework;
 
-import com.kodilla.patterns2.observer.forum.homework.*;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
